@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(73, 137, 255);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "header header header"
+    "main main nav"
+    "main main nav"
+    "main main nav"
+    "footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+    font-family: 'Mukta', sans-serif;
+  }
+
+  h1 {
+    font-size: 100px;
+    text-align: left;
+  }
+
+  img {
+    height: 100px;
+    width: 150px;
+    border-radius: 40%;
+  }
+
+  nav {
+    grid-area: nav; 
+    background-color: rgb(199, 194, 194);
+    border-radius: 10%;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  ul {
+   display: flex;
+   flex-direction: column;
+    align-items: space-around;
+    list-style-type: none;
+    font-family: 'Mukta', sans-serif;
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+ li {
+    font-size: 25px;
+
+  }
