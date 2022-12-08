@@ -2,26 +2,26 @@ body {
     background-color: rgb(73, 137, 255);
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.1fr 1fr 0.3fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
     grid-template-areas: 
     "header header header"
     "main main nav"
     "main main nav"
-    "main main nav"
-    "footer footer footer";
+    "footer footer footer"; 
+    font-family: 'Mukta', sans-serif;
   }
 
   header {
     grid-area: header;
-    font-family: 'Mukta', sans-serif;
+
   }
 
   h1 {
-    font-size: 100px;
+    font-size: 150px;
     text-align: left;
   }
 
-  img {
+  #aca {
     height: 100px;
     width: 150px;
     border-radius: 40%;
@@ -29,19 +29,12 @@ body {
 
   nav {
     grid-area: nav; 
-    background-color: rgb(199, 194, 194);
-    border-radius: 10%;
-    flex-direction: column;
-    width: fit-content;
+    border-radius: 1%;
   }
 
   ul {
-   display: flex;
-   flex-direction: column;
-    align-items: space-around;
     list-style-type: none;
     font-family: 'Mukta', sans-serif;
-    
   }
 
   a {
@@ -50,5 +43,37 @@ body {
 
  li {
     font-size: 25px;
-
   }
+
+  #selfie {
+    height: 250px;
+    width: 300px;
+    border-radius: 20%;
+    padding-left: 30px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  #text {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  @media (max-width: 767px) {
+    body {
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+}
