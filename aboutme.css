@@ -41,7 +41,7 @@ a {
   }
 
   .links:hover {
-    animation: navtext 1.5s infinite;
+    animation: navtext 2s infinite;
   }
 
  @keyframes navtext {
@@ -65,6 +65,16 @@ a {
 
 main {
     grid-area: main;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin: 1%;
 }
 
 footer {
