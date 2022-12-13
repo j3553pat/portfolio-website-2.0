@@ -13,7 +13,13 @@ body {
 
   header {
     grid-area: header;
+   
+  }
 
+  .home {
+    display: flex;
+    font-size: 100px;
+    margin: 0;
   }
 
   h1 {
@@ -51,7 +57,7 @@ body {
   }
 
   .links:hover {
-    animation: navtext 1.5s infinite;
+    animation: navtext 2s infinite;
   }
 
  @keyframes navtext {
@@ -78,6 +84,7 @@ body {
 
   .profile {
     display: flex;
+    flex-direction: column;
    justify-content: center;
    align-items: center;
   }
@@ -85,8 +92,7 @@ body {
   #selfie {
     height: 250px;
     width: 300px;
-    border-radius: 20%;
-    padding-left: 30px;
+    border-radius: 50%;
   }
 
   h2 {
