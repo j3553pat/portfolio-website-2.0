@@ -1,0 +1,72 @@
+body {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"; 
+}
+
+header {
+    grid-area: header;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.navbar {
+    list-style-type: none;
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+a {
+    text-decoration: none; 
+  }
+
+ .links {
+    font-size: 25px;
+    
+  }
+
+  .links:hover {
+    animation: navtext 1.5s infinite;
+  }
+
+ @keyframes navtext {
+    0%{
+      font-size: 25px;
+    }
+    25% {
+      font-size: 50px;
+    }
+    50% {
+      font-size: 25px;
+    }
+    75%{
+      font-size: 50px;
+    }
+    100% {
+      font-size: 25px;
+    }
+  }
+
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
