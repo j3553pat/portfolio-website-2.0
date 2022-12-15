@@ -13,13 +13,6 @@ body {
 
   header {
     grid-area: header;
-   
-  }
-
-  .home {
-    display: flex;
-    font-size: 100px;
-    margin: 0;
   }
 
   h1 {
@@ -44,7 +37,6 @@ body {
     font-family: 'Mukta', sans-serif;
     display: flex;
     justify-content: space-evenly;
-    
   }
 
   a {
@@ -137,18 +129,26 @@ body {
   body {
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "header header"
-    "main nav"
-    "main nav"
+    "nav main"
+    "nav main"
     "footer footer";
   }
 
   .navbar {
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 300px;
+  }
+
+  main {
+    margin-left: 15%;
+  }
+
+  .links:hover {
+    animation: navtext 0s 0;
   }
 }
